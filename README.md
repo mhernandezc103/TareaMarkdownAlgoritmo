@@ -1,13 +1,15 @@
-# Marlon Hernandez - Documentación en Markdown
+# Marlon Hernandez - Documentación en Markdown - Desde Bash
 Tarea Markdown Algoritmos - 2do Semestre Ingenieria en Sistemas UMG - Boca Del Monte
 
 ## Cómo utilizar `if - else` y `switch`
 
-![Imagen con el logo de C++ y Codigo de un While de fondo](https://msmk.university/wp-content/uploads/2025/05/programacionc.webp)
+![Imagen con el logo de C++ y Codigo de un While de fondo](./assets/img/programacionc.webp)
 
 ---
 
 ### **Que es If, else y Switch - Explicado como lo comprendi** 
+
+---
 
 #### `if - else`
 La estructura `if - else` permite ejecutar diferentes bloques de código dependiendo de si una condición es verdadera o falsa.
@@ -26,7 +28,7 @@ Si (condición) {
 }
 ```
 
-#### `if - else`
+#### `Switch`
 
 La estructura `Switch` permite evaluar múltiples condiciones (casos) y ejecutar un bloque de código según cuál se cumpla.
 
@@ -68,4 +70,43 @@ Cuándo usar switch:
 
     - Multiples Casos Basados en el Valor de una variable
         Por ejemplo:
-            Ingresar un valor que puede tener muchos estados por ejemplo en las calculadoras, si ingresan: "+", "-", "*", "/" y en base a eso, seleccionar la operacion a realizar
+            Ingresar un valor que puede tener muchos estados 
+            por ejemplo en las calculadoras, 
+            si ingresan: "+", "-", "*", "/" 
+            y en base a eso, seleccionar la operacion a realizar
+
+### **Que es If, else y Switch - Adentrado mucho mas a lo tecnico** 
+
+> If - Else: Evaluan una condicion logica que puede ser una comparacion, una verificacion de valor o cualquier expresion que devuelva un valor booleano
+
+ ```pseudo
+ if (  edad >= 18 ) {
+  // Código a ejecutar si la persona es mayor de edad
+  // Por ejemplo, mostrar un mensaje de acceso
+  imprimir("Acceso permitido");
+} else {
+  // Código a ejecutar si la persona es menor de edad
+  // Por ejemplo, mostrar un mensaje de restricción
+  imprimir("Acceso denegado");
+}
+```
+
+
+> Switch: Se evalua una expresion, puede ser una variable o cualquier expresion que devuelva un valor
+
+```c++
+int dia = 2;
+switch (dia) {
+  case 1:
+    cout << "Lunes";
+    break;
+  case 2:
+    cout << "Martes";
+    break;
+  case 3:
+    cout << "Miércoles";
+    break;
+  default:
+    cout << "Día inválido";
+}
+```
